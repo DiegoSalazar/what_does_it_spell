@@ -105,13 +105,13 @@
         if (code >= 48 && code <= 57) {
           idiot.style.display = 'block';
           toggleElements('none', theSetup);
+          numberField.disabled = true;
+          submitBtn.disabled = true;
         } else {
           idiot.style.display = 'none';
           toggleElements('block', theSetup);
         }
         numberField.value = '';
-        numberField.disabled = true;
-        submitBtn.disabled = true;
       }
 
       numberField.onkeyup = whoa;
